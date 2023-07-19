@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <NotesApp></NotesApp>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NotesApp from './components/NotesApp.vue'
+/* import the fontawesome core */
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NotesApp
   }
 }
 </script>
