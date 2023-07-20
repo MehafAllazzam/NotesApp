@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Button to show/hide the  add note form -->
-    <button type="button" class="btn btn-secondary btn-lg" v-on:click="Show">+</button>
+    <button type="button" class="btn btn-primary btn-lg" v-on:click="Show">+</button>
     <!-- Add note form card -->
     <div class="card shadow-sm border-dark mb-3 mx-auto m-3" style="max-width: 30rem;" v-show="ShowForm">
       <div class="card-header">
@@ -30,14 +30,14 @@
     </div>
     <!-- Heading for the list of notes -->
     <h1 class="px-5 m-3 text-start">Notes Added</h1>
-    <hr class="m-3">
+    <hr class=" m-3">
     <!-- List of notes -->
     <!--  -->
     <div class="d-flex flex-wrap m-5">
       <!-- Note card -->
       <div class="card border-dark mb-3 m-3" style="width: 300px;" v-for="(note, index) in Notes" :key="index" v-show="note.ShowNote">
         <!-- Note header -->
-        <div class="card-header d-flex align-items-center justify-content-between" style="background-color: rgb(218, 236, 209);">
+        <div class="card-header d-flex align-items-center justify-content-between" style="background-color: rgba(76, 78, 87, 0.198);">
           <!-- Note title -->
           <div>
             {{ note.Title }}
