@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <NotesApp></NotesApp>
+    <notesApp></notesApp>
   </div>
   
 </template>
 
 <script>
-import NotesApp from './components/NotesApp.vue'
+import notesApp from './components/notesApp.vue'
 /* import the fontawesome core */
 
 export default {
   name: 'App',
   components: {
-    NotesApp
+    notesApp
   }
 }
 </script>
